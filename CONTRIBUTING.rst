@@ -1,40 +1,113 @@
 Contributing
 ============
 
-Reporting issues and feedback
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Please report all issues and feedback to our help desk by sending an email to
-info@zenodo.org.
+Contributions are welcome, and they are greatly appreciated! Every
+little bit helps, and credit will always be given.
 
-Security issues
-~~~~~~~~~~~~~~~
-If you discover any security issue, please report it
-directly to info@zenodo.org (specifically **do not** report it to our GitHub
-repository). Please include the the word ``SECURITY`` in all-caps in the email
-subject line. We will acknowledge the issue as fast as possible, and keep you
-updated on the progress of fixing the issue. We additional ask you
-to not publicise the issue until after we have fixed it. After we have fixed
-the issue we will publicly open and close an issue in our GitHub repository to
-document the issue and publicly credit you for finding it (with your permission
-of course).
+Types of Contributions
+----------------------
 
-Help curate Zenodo
+Report Bugs
+~~~~~~~~~~~
+
+Report bugs at https://github.com/zenodo/zenodo/issues.
+
+If you are reporting a bug, please include:
+
+* Your operating system name and version.
+* Any details about your local setup that might be helpful in troubleshooting.
+* Detailed steps to reproduce the bug.
+
+Fix Bugs
+~~~~~~~~
+
+Look through the GitHub issues for bugs. Anything tagged with "bug"
+is open to whoever wants to implement it.
+
+Implement Features
 ~~~~~~~~~~~~~~~~~~
-Zenodo is built as a platform for distributed research data curation. We provide CERN's expertise in building/operating large-scale digital repositories as well as big data management and preservation. Zenodo is open to all research, and we therefore need your domain knowledge to help curate content on Zenodo. If you're a publisher, librarian, university, instituion, research group, ... then go create a `Community <http://zenodo.org/communities>` and encourage people to submit data to it.
 
-Spread the word
+Look through the GitHub issues for features. Anything tagged with "feature"
+is open to whoever wants to implement it.
+
+Write Documentation
+~~~~~~~~~~~~~~~~~~~
+
+Zenodo could always use more documentation, whether as part of the
+official Zenodo docs, in docstrings, or even on the web in blog posts,
+articles, and such.
+
+Submit Feedback
 ~~~~~~~~~~~~~~~
-Happy with Zenodo? Then you can help us spread the word. Tell your colleagues, tweet about, show case your data on Zenodo. We have limited outreach efforts so any help you can provide is greatly appreciated. If you'd like to present Zenodo, feel free to contact us to get inspiration and help. Want us to present, we're happy to give remote webinars if you can gather an audience.
 
-Co-develop Zenodo
-~~~~~~~~~~~~~~~~~
-Are you missing a feature in Zenodo? Why not help us built the feature. We are
-happy to receive both tiny and large contributions to Zenodo. Have a look at
-our Development Process and Project Life Cycle and don't hesitate to get in
-contact with us.
+The best way to send feedback is to file an issue at
+https://github.com/zenodo/zenodo/issues.
 
-Contributor agreement
-~~~~~~~~~~~~~~~~~~~~~
-By making a pull request against our repository, we assume that you agree to
-license your contribution under GPLv3 (source code) / Creative Commons
-Attribution 4.0 International (text content).
+If you are proposing a feature:
+
+* Explain in detail how it would work.
+* Keep the scope as narrow as possible, to make it easier to implement.
+* Remember that this is a volunteer-driven project, and that contributions
+  are welcome :)
+
+Get Started!
+------------
+
+Ready to contribute? Here's how to set up `invenio` for local development.
+
+1. Fork the `invenio` repo on GitHub.
+2. Clone your fork locally:
+
+   .. code-block:: console
+
+      $ git clone git@github.com:your_name_here/zenodo.git
+
+3. Install your local copy into a virtualenv. Assuming you have
+   virtualenvwrapper installed, this is how you set up your fork for local
+   development:
+
+   .. code-block:: console
+
+      $ mkvirtualenv zenodo
+      $ cd zenodo/
+      $ pip install -e .[all]
+
+4. Create a branch for local development:
+
+   .. code-block:: console
+
+      $ git checkout -b name-of-your-bugfix-or-feature
+
+   Now you can make your changes locally.
+
+5. When you're done making changes, check that your changes pass tests:
+
+   .. code-block:: console
+
+      $ ./run-tests.sh
+
+   The tests will provide you with test coverage and also check PEP8
+   (code style), PEP257 (documentation), flake8 as well as build the Sphinx
+   documentation and run doctests.
+
+6. Commit your changes and push your branch to GitHub:
+
+   .. code-block:: console
+
+      $ git add .
+      $ git commit -s -m "Your detailed description of your changes."
+      $ git push origin name-of-your-bugfix-or-feature
+
+7. Submit a pull request through the GitHub website.
+
+Pull Request Guidelines
+-----------------------
+
+Before you submit a pull request, check that it meets these guidelines:
+
+1. The pull request should include tests and must not decrease test coverage.
+2. If the pull request adds functionality, the docs should be updated. Put
+   your new functionality into a function with a docstring.
+3. The pull request should work for Python 2.7, 3.3, 3.4 and 3.5. Check
+   https://travis-ci.com/zenodo/zenodo/pull_requests
+   and make sure that the tests pass for all supported Python versions.
